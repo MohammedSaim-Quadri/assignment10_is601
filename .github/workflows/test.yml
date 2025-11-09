@@ -13,9 +13,9 @@ jobs:
       postgres:
         image: postgres:latest
         env:
-          POSTGRES_USER: user
-          POSTGRES_PASSWORD: password
-          POSTGRES_DB: mytestdb  # <-- Dedicated test DB name
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: fastapi_db  # <-- Dedicated test DB name
         ports:
           - 5432:5432
         options: >-
